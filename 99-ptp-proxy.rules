@@ -1,0 +1,2 @@
+# Restrict proxy PHC and netdevice creation to the trusted backend group.
+SUBSYSTEM=="misc", KERNEL=="ptp_proxy", OWNER="root", GROUP="ptp-proxy", MODE="0660"
